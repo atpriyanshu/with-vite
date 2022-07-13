@@ -22,7 +22,7 @@ jobs:
 
       - uses: actions/upload-artifact@master
         with:
-          name: Vite artifacts
+          name: vite artifacts
           path: "public"
   
   deploy:
@@ -34,7 +34,7 @@ jobs:
 
       - uses: actions/download-artifact@master
         with:
-          name: Vite artifacts
+          name: vite artifacts
           path: "public"
 
       - name: Deploy
