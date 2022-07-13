@@ -23,7 +23,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: vite artifacts
-          path: "public"
+          path: public
   
   deploy:
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
       - uses: actions/download-artifact@master
         with:
           name: vite artifacts
-          path: "public"
+          path: public
 
       - name: Deploy
         uses: actions/deploy-pages@v1
